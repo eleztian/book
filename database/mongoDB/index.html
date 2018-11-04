@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>mysql · Notes</title>
+        <title>mongoDB · Notes</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tools/" />
+    <link rel="next" href="../mysql/" />
     
     
-    <link rel="prev" href="../mongoDB/" />
+    <link rel="prev" href="../" />
     
 
     </head>
@@ -125,9 +125,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../mongoDB/">
+        <li class="chapter active" data-level="1.3" data-path="./">
             
-                <a href="../mongoDB/">
+                <a href="./">
             
                     
                     mongoDB
@@ -138,9 +138,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../mysql/">
             
-                <a href="./">
+                <a href="../mysql/">
             
                     
                     mysql
@@ -152,9 +152,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="tools/">
+        <li class="chapter " data-level="1.4.1" data-path="../mysql/tools/">
             
-                <a href="tools/">
+                <a href="../mysql/tools/">
             
                     
                     tools
@@ -166,9 +166,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1.1" data-path="tools/compare.html">
+        <li class="chapter " data-level="1.4.1.1" data-path="../mysql/tools/compare.html">
             
-                <a href="tools/compare.html">
+                <a href="../mysql/tools/compare.html">
             
                     
                     MYSQL 工具 - Compare
@@ -184,9 +184,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="udf/">
+        <li class="chapter " data-level="1.4.2" data-path="../mysql/udf/">
             
-                <a href="udf/">
+                <a href="../mysql/udf/">
             
                     
                     udf
@@ -198,9 +198,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.2.1" data-path="udf/udf.html">
+        <li class="chapter " data-level="1.4.2.1" data-path="../mysql/udf/udf.html">
             
-                <a href="udf/udf.html">
+                <a href="../mysql/udf/udf.html">
             
                     
                     MySQL UDF 开发环境搭建
@@ -290,7 +290,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >mysql</a>
+        <a href="../.." >mongoDB</a>
     </h1>
 </div>
 
@@ -305,38 +305,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mysql">mysql</h1>
-<h2 id="mysql-&#x5B89;&#x88C5;">MySQL &#x5B89;&#x88C5;</h2>
-<ul>
-<li>sudo apt-get install mysql-server</li>
-<li>sudo apt install mysql-client</li>
-<li>sudo apt install libmysqlclient-dev</li>
-</ul>
-<h2 id="&#x914D;&#x7F6E;&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;">&#x914D;&#x7F6E;&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;</h2>
-<ul>
-<li>sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf&#x3002;&#x6CE8;&#x91CA;&#x6389;bind-address = 127.0.0.1</li>
-<li>mysql -u root -p</li>
-</ul>
-<pre><code>  * grant all on *.* to root@&apos;%&apos; identified by &apos;&#x4F60;&#x7684;&#x5BC6;&#x7801;&apos; with grant option;
-  * flush privileges;
-</code></pre><ul>
-<li>service mysql restart</li>
-</ul>
-<h2 id="&#x4FEE;&#x6539;root&#x521D;&#x59CB;&#x5BC6;&#x7801;5721">&#x4FEE;&#x6539;root&#x521D;&#x59CB;&#x5BC6;&#x7801;(5.7.21)</h2>
-<ul>
-<li>&#x5207;&#x6362;&#x5230;root&#x7528;&#x6237;</li>
-<li>mysql -u root</li>
-<li>&#x4FEE;&#x6539;&#x5BC6;&#x7801;</li>
-</ul>
-<pre><code class="lang-sql"><span class="hljs-keyword">update</span> <span class="hljs-keyword">user</span> <span class="hljs-keyword">set</span> authentication_string=<span class="hljs-keyword">PASSWORD</span>(<span class="hljs-string">&quot;123456&quot;</span>), <span class="hljs-keyword">plugin</span>=<span class="hljs-string">&apos;mysql_native_password&apos;</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">User</span>=<span class="hljs-string">&quot;root&quot;</span>;
-<span class="hljs-keyword">flush</span> <span class="hljs-keyword">privileges</span>;
-exit;
-</code></pre>
-<ul>
-<li>&#x91CD;&#x542F;mysql</li>
-</ul>
-<p>==== mysql tools ====
-[[databases:mysql:tools#compare|&#x6570;&#x636E;&#x5E93;&#x6BD4;&#x8F83;]]</p>
+                                <h1 id="mongodb">MongoDB</h1>
 
                                 
                                 </section>
@@ -364,12 +333,12 @@ exit;
 
             
                 
-                <a href="../mongoDB/" class="navigation navigation-prev " aria-label="Previous page: mongoDB">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: database">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="tools/" class="navigation navigation-next " aria-label="Next page: tools">
+                <a href="../mysql/" class="navigation navigation-next " aria-label="Next page: mysql">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -380,7 +349,7 @@ exit;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mysql","level":"1.4","depth":1,"next":{"title":"tools","level":"1.4.1","depth":2,"path":"database/mysql/tools/README.md","ref":"database/mysql/tools/README.md","articles":[{"title":"MYSQL 工具 - Compare","level":"1.4.1.1","depth":3,"path":"database/mysql/tools/compare.md","ref":"database/mysql/tools/compare.md","articles":[]}]},"previous":{"title":"mongoDB","level":"1.3","depth":1,"path":"database/mongoDB/README.md","ref":"database/mongoDB/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","toggle-chapters","theme-comscore"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"summary":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"tab.zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"database/mysql/README.md","mtime":"2018-11-04T06:32:26.779Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-04T06:41:13.460Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mongoDB","level":"1.3","depth":1,"next":{"title":"mysql","level":"1.4","depth":1,"path":"database/mysql/README.md","ref":"database/mysql/README.md","articles":[{"title":"tools","level":"1.4.1","depth":2,"path":"database/mysql/tools/README.md","ref":"database/mysql/tools/README.md","articles":[{"title":"MYSQL 工具 - Compare","level":"1.4.1.1","depth":3,"path":"database/mysql/tools/compare.md","ref":"database/mysql/tools/compare.md","articles":[]}]},{"title":"udf","level":"1.4.2","depth":2,"path":"database/mysql/udf/README.md","ref":"database/mysql/udf/README.md","articles":[{"title":"MySQL UDF 开发环境搭建","level":"1.4.2.1","depth":3,"path":"database/mysql/udf/udf.md","ref":"database/mysql/udf/udf.md","articles":[]}]}]},"previous":{"title":"database","level":"1.2","depth":1,"path":"database/README.md","ref":"database/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","toggle-chapters","theme-comscore"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"summary":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"tab.zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"database/mongoDB/README.md","mtime":"2018-11-04T06:28:20.899Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-04T06:41:13.460Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
