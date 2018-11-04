@@ -1,7 +1,7 @@
 git pull origin master
-git add .
 gitbook build 
 mv _book/* book-end
+rm -rf _book
 cd book-end
 git add .
 git commit -m "update"
