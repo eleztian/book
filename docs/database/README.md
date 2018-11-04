@@ -1,2 +1,2 @@
-# databases
+# database
 
